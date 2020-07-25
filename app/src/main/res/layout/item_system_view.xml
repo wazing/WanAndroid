@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="8dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray800"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="开发环境" />
+
+    <com.donkingliang.labels.LabelsView
+        android:id="@+id/item_labels"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        app:labelBackground="@drawable/ripple_system_label"
+        app:labelTextColor="@color/gray600"
+        app:labelTextPaddingBottom="4dp"
+        app:labelTextPaddingLeft="16dp"
+        app:labelTextPaddingRight="16dp"
+        app:labelTextPaddingTop="4dp"
+        app:lineMargin="12dp"
+        app:selectType="NONE"
+        app:wordMargin="8dp" />
+
+</LinearLayout>

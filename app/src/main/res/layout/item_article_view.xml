@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardElevation="0dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/item_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/article_item_top"
+            android:textColor="@color/itemArticleFresh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/item_nice_date"
+            app:layout_constraintEnd_toStartOf="@id/item_fresh"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_nice_date"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/article_item_fresh"
+            android:textColor="@color/itemArticleFresh"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/item_nice_date"
+            app:layout_constraintEnd_toStartOf="@id/item_tag"
+            app:layout_constraintStart_toEndOf="@id/item_top"
+            app:layout_constraintTop_toTopOf="@id/item_nice_date"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/itemArticleTag"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/item_nice_date"
+            app:layout_constraintEnd_toStartOf="@id/item_author"
+            app:layout_constraintStart_toEndOf="@id/item_fresh"
+            app:layout_constraintTop_toTopOf="@id/item_nice_date"
+            tools:text="项目"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/itemArticleAuthor"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_nice_date"
+            app:layout_constraintEnd_toStartOf="@id/item_space"
+            app:layout_constraintStart_toEndOf="@id/item_tag"
+            app:layout_constraintTop_toTopOf="@id/item_nice_date"
+            tools:text="@string/article_item_no_author" />
+
+        <Space
+            android:id="@+id/item_space"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toStartOf="@id/item_nice_date"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/item_author"
+            app:layout_constraintTop_toTopOf="@id/item_nice_date" />
+
+        <TextView
+            android:id="@+id/item_nice_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/itemArticleDate"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2天前" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/itemArticleTitle"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_nice_date"
+            app:layout_goneMarginStart="0dp"
+            tools:text="学学学学学学学学学学学学学学学学学学学学学学学学学学不动了！！！" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/itemArticleDesc"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_title"
+            app:layout_goneMarginTop="0dp"
+            tools:ignore="SmallSp"
+            tools:text="在 Android 7.0了，引入了「Network Security Configuration」，当时默认配置为信任系统内置证书以及用户安装证书，并且允许访问 HTTP 请求。"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/item_chart_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/itemArticleChapter"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_collect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_collect"
+            tools:text="官方/WanAndroid" />
+
+        <ImageView
+            android:id="@+id/item_collect"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?actionBarItemBackground"
+            android:contentDescription="@null"
+            android:tint="@color/yellow500"
+            android:src="@drawable/selector_item_article_collection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_desc" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

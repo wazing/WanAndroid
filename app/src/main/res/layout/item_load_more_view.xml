@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:id="@+id/item_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/item_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载中..." />
+
+    <TextView
+        android:id="@+id/item_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加载出错，点击重试"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/item_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已经全部加载完成 (=・ω・=)"
+        tools:visibility="gone" />
+
+</LinearLayout>

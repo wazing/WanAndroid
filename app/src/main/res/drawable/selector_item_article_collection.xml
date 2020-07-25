@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ic_article_collection_select_24dp"
+        android:state_selected="true" />
+
+    <item android:drawable="@drawable/ic_article_collection_24dp" android:state_selected="false" />
+
+</selector>
