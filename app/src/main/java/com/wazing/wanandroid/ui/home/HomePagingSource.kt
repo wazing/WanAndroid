@@ -1,8 +1,8 @@
 package com.wazing.wanandroid.ui.home
 
 import androidx.paging.PagingSource
+import com.wazing.common.data.checkResult
 import com.wazing.wanandroid.model.Article
-import com.wazing.wanandroid.model.api.checkResult
 
 class HomePagingSource(
     private val repository: HomeRepository

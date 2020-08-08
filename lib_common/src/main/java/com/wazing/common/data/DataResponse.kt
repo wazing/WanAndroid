@@ -1,4 +1,4 @@
-package com.wazing.wanandroid.model.entity
+package com.wazing.common.data
 
 import com.google.gson.annotations.SerializedName
 

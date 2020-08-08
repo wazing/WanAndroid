@@ -1,8 +1,8 @@
 package com.wazing.wanandroid.ui.system.pagingsource
 
 import androidx.paging.PagingSource
+import com.wazing.common.data.checkResult
 import com.wazing.wanandroid.model.Article
-import com.wazing.wanandroid.model.api.checkResult
 import com.wazing.wanandroid.ui.system.system.SystemRepository
 
 class SystemPagingSource(private val repository: SystemRepository) : PagingSource<Int, Article>() {

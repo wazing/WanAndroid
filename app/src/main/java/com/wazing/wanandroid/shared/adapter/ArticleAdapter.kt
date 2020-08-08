@@ -10,8 +10,8 @@ import androidx.core.text.HtmlCompat
 import androidx.core.view.isVisible
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.Article
 
 class ArticleAdapter(
@@ -36,13 +36,13 @@ class ArticleAdapter(
         return BaseViewHolder.create(parent, R.layout.item_article_view).apply {
             itemView.setOnClickListener { v ->
                 onClickListener?.let {
-                    val position = this.absoluteAdapterPosition
+                    val position = this.adapterPosition
                     val item = getItem(position) ?: return@setOnClickListener
                     it.invoke(v, item, position)
                 }
             }
             getView<ImageView>(R.id.item_collect).setOnClickListener {
-                val position = this.absoluteAdapterPosition
+                val position = this.adapterPosition
                 val item = getItem(position) ?: return@setOnClickListener
                 val isCollect = it.isSelected
                 item.collect = !isCollect

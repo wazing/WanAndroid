@@ -2,7 +2,7 @@ package com.wazing.wanandroid.ui.mine.collect
 
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import com.wazing.wanandroid.base.BaseViewModel
+import com.wazing.common.base.BaseViewModel
 
 class CollectViewModel(private val repository: CollectRepository) : BaseViewModel() {
 

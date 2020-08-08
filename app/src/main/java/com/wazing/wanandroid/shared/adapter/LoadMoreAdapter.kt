@@ -1,12 +1,10 @@
 package com.wazing.wanandroid.shared.adapter
 
-import android.view.View
 import android.view.ViewGroup
-import androidx.core.view.isVisible
 import androidx.paging.LoadState
 import androidx.paging.LoadStateAdapter
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 
 class LoadMoreAdapter(private val retryCallback: () -> Unit) : LoadStateAdapter<BaseViewHolder>() {
 

@@ -2,7 +2,7 @@ package com.wazing.wanandroid.ui.system.system
 
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import com.wazing.wanandroid.base.BaseViewModel
+import com.wazing.common.base.BaseViewModel
 
 class SystemViewModel(private val repository: SystemRepository) : BaseViewModel() {
 

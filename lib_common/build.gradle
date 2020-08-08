@@ -1,0 +1,43 @@
+import com.wazing.wanandroid.plugin.Versions
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion Versions.compileSdk
+    buildToolsVersion Versions.buildTools
+    defaultConfig {
+        minSdkVersion Versions.minSdk
+        targetSdkVersion Versions.targetSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    api "org.jetbrains.kotlin:kotlin-stdlib:${Versions.kotlin}"
+    api "androidx.core:core-ktx:${Versions.coreKtx}"
+    api "androidx.appcompat:appcompat:${Versions.appcompat}"
+    api "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefreshlayout}"
+    api "com.google.android.material:material:${Versions.material}"
+
+    api "androidx.lifecycle:lifecycle-livedata-ktx:${Versions.lifecycle}"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
+    api "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+
+    api "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+    api "com.squareup.retrofit2:converter-gson:${Versions.converterGson}"
+    api "com.squareup.okhttp3:logging-interceptor:${Versions.loggingInterceptor}"
+}

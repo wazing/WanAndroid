@@ -10,7 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.animation.AnimationUtils
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseFragment
+import com.wazing.common.base.BaseFragment
 import com.wazing.wanandroid.shared.adapter.ViewPager2Adapter
 import com.wazing.wanandroid.ui.home.HomeFragment
 import com.wazing.wanandroid.ui.mine.MineFragment

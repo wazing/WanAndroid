@@ -1,9 +1,8 @@
-package com.wazing.wanandroid.model.api
+package com.wazing.common.data
 
 import android.accounts.NetworkErrorException
 import com.google.gson.JsonSyntaxException
 import com.google.gson.stream.MalformedJsonException
-import com.wazing.wanandroid.model.entity.DataResponse
 import java.net.ConnectException
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
@@ -26,5 +25,8 @@ data class ApiException(val code: Int, override var message: String) : Exception
 }
 
 fun <T> DataResponse<T>.checkResult(): T {
-    return if (code == 0) data else throw ApiException(code, msg)
+    return if (code == 0) data else throw com.wazing.common.data.ApiException(
+        code,
+        msg
+    )
 }

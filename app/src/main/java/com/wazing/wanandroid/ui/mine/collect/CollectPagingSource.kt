@@ -1,7 +1,7 @@
 package com.wazing.wanandroid.ui.mine.collect
 
 import androidx.paging.PagingSource
-import com.wazing.wanandroid.model.api.checkResult
+import com.wazing.common.data.checkResult
 import com.wazing.wanandroid.model.entity.Collect
 
 class CollectPagingSource(

@@ -1,4 +1,4 @@
-package com.wazing.wanandroid.model
+package com.wazing.common.data
 
 sealed class LoadStatus(endOfLoading: Boolean) {
 

@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.model.api.ResultCallback
+import com.wazing.common.data.ResultCallback
 import com.wazing.wanandroid.ui.main.MainActivity
 import kotlinx.android.synthetic.main.include_refresh_list.*
 import org.koin.android.ext.android.inject

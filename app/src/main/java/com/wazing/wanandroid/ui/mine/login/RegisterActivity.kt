@@ -8,7 +8,7 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.jeremyliao.liveeventbus.LiveEventBus
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.model.api.ResultCallback
+import com.wazing.common.data.ResultCallback
 import com.wazing.wanandroid.util.EVENT_USER_INFO
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.include_toolbar.*

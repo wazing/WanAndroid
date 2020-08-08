@@ -7,9 +7,9 @@ import android.widget.TextView
 import androidx.core.text.HtmlCompat
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.DiffUtil
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
 import com.wazing.wanandroid.base.BasePagingDataAdapter
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.entity.Collect
 
 class CollectAdapter(private val context: Context) : BasePagingDataAdapter<Collect>(COMPARATOR) {

@@ -3,9 +3,9 @@ package com.wazing.wanandroid.ui.system.system
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
+import com.wazing.common.data.checkResult
 import com.wazing.wanandroid.model.Article
 import com.wazing.wanandroid.model.api.ApiService
-import com.wazing.wanandroid.model.api.checkResult
 import com.wazing.wanandroid.ui.system.pagingsource.SystemPagingSource
 import kotlinx.coroutines.flow.Flow
 

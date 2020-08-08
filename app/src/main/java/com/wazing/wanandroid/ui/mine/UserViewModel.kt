@@ -2,10 +2,7 @@ package com.wazing.wanandroid.ui.mine
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
-import androidx.lifecycle.asLiveData
-import androidx.lifecycle.liveData
-import com.wazing.wanandroid.base.BaseViewModel
-import com.wazing.wanandroid.model.entity.Coin
+import com.wazing.common.base.BaseViewModel
 
 class UserViewModel(private val repository: UserRepository) : BaseViewModel() {
 

@@ -3,8 +3,8 @@ package com.wazing.wanandroid.ui.system.navigate
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.donkingliang.labels.LabelsView
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.entity.NavigateParent
 
 class NavigateAdapter : RecyclerView.Adapter<BaseViewHolder>() {

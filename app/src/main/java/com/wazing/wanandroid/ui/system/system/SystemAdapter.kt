@@ -4,8 +4,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.donkingliang.labels.LabelsView
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.entity.SystemParent
 
 class SystemAdapter : RecyclerView.Adapter<BaseViewHolder>() {
@@ -28,7 +28,7 @@ class SystemAdapter : RecyclerView.Adapter<BaseViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return BaseViewHolder.create(parent, R.layout.item_system_view).apply {
             this.getView<LabelsView>(R.id.item_labels).setOnLabelClickListener { v, _, p ->
-                val position = this.absoluteAdapterPosition
+                val position = this.adapterPosition
                 itemClickListener?.invoke(v, list[position], p)
             }
         }

@@ -1,7 +1,6 @@
 package com.wazing.wanandroid.ui.system.navigate
 
-import com.wazing.wanandroid.base.BaseViewModel
-import com.wazing.wanandroid.ui.system.navigate.NavigateRepository
+import com.wazing.common.base.BaseViewModel
 
 class NavigateViewModel(private val repository: NavigateRepository) : BaseViewModel() {
 

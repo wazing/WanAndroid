@@ -4,6 +4,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
+import com.wazing.common.adapter.BaseViewHolder
 
 abstract class BasePagingDataAdapter<T : Any>(
     comparator: DiffUtil.ItemCallback<T>
@@ -18,7 +19,7 @@ abstract class BasePagingDataAdapter<T : Any>(
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BaseViewHolder {
         return onCreateBaseViewHolder(parent, viewType).apply {
             itemView.setOnClickListener {
-                val position = this.bindingAdapterPosition
+                val position = this.adapterPosition
                 val item = getItem(position) ?: return@setOnClickListener
                 onClickListener?.invoke(it, item, position)
             }

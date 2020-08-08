@@ -1,14 +1,10 @@
-package com.wazing.wanandroid.base
+package com.wazing.common.base
 
 import android.widget.Toast
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
 
-abstract class BaseFragment : Fragment {
-
-    constructor() : super()
-
-    constructor(@LayoutRes layoutId: Int) : super(layoutId)
+abstract class BaseFragment(@LayoutRes private val layoutId: Int) : Fragment(layoutId) {
 
     open fun scrollToTop() {}
 

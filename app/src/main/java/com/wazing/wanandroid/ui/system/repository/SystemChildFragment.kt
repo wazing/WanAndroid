@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.paging.LoadState
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.model.api.ApiException
+import com.wazing.common.data.ApiException
 import com.wazing.wanandroid.model.entity.SystemChildren
 import com.wazing.wanandroid.shared.adapter.ArticleAdapter
 import com.wazing.wanandroid.shared.adapter.LoadMoreAdapter

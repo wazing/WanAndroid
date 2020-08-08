@@ -3,8 +3,8 @@ package com.wazing.wanandroid.ui.mine.coin
 import android.view.ViewGroup
 import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.entity.CoinInfo
 
 class CoinAdapter : PagingDataAdapter<CoinInfo, BaseViewHolder>(COIN_COMPARATOR) {

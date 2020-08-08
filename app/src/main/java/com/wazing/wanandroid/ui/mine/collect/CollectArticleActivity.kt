@@ -8,15 +8,12 @@ import androidx.lifecycle.lifecycleScope
 import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadState
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.model.api.ApiException
+import com.wazing.common.data.ApiException
 import com.wazing.wanandroid.shared.adapter.LoadMoreAdapter
 import com.wazing.wanandroid.util.SpacesItemDecoration
 import kotlinx.android.synthetic.main.activity_collect.*
 import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.take
-import org.koin.android.ext.android.inject
 import org.koin.androidx.viewmodel.ext.android.viewModel
-import org.koin.core.parameter.parametersOf
 import java.lang.Exception
 
 class CollectArticleActivity : AppCompatActivity() {

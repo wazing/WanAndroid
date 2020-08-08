@@ -1,4 +1,4 @@
-package com.wazing.wanandroid.base
+package com.wazing.common.adapter
 
 import android.util.SparseArray
 import android.view.LayoutInflater
@@ -8,7 +8,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.IdRes
 import androidx.annotation.LayoutRes
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 
 open class BaseViewHolder private constructor(
@@ -40,15 +39,19 @@ open class BaseViewHolder private constructor(
     fun setImage(@IdRes viewId: Int, img: (imageView: ImageView) -> Unit) = img(getView(viewId))
 
     fun setVisible(@IdRes viewId: Int, block: () -> Boolean) {
-        getView<View>(viewId).isVisible = block.invoke()
+        getView<View>(viewId).isVisibled(block.invoke())
     }
 
     fun setVisible(@IdRes viewId: Int, isVisible: Boolean) {
-        getView<View>(viewId).isVisible = isVisible
+        getView<View>(viewId).isVisibled(isVisible)
     }
 
     fun isSelected(@IdRes viewId: Int, isSelected: Boolean) {
         getView<View>(viewId).isSelected = isSelected
+    }
+
+    fun View.isVisibled(isVisible: Boolean) {
+        this.visibility = if (isVisible) View.VISIBLE else View.GONE
     }
 
     companion object {

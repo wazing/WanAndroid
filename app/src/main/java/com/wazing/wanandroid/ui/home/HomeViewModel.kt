@@ -4,9 +4,9 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.liveData
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
-import com.wazing.wanandroid.base.BaseViewModel
+import com.wazing.common.base.BaseViewModel
 import com.wazing.wanandroid.model.BannerEntity
-import com.wazing.wanandroid.model.api.ResultCallback
+import com.wazing.common.data.ResultCallback
 
 class HomeViewModel(
     private val repository: HomeRepository

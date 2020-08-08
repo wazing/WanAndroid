@@ -3,8 +3,8 @@ package com.wazing.wanandroid.shared.adapter
 import android.view.ViewGroup
 import androidx.paging.LoadState
 import androidx.paging.LoadStateAdapter
+import com.wazing.common.adapter.BaseViewHolder
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseViewHolder
 import com.wazing.wanandroid.model.BannerEntity
 import com.wazing.wanandroid.util.BANNER_TIME_DEFAULT
 import com.wazing.wanandroid.util.BannerImageLoader

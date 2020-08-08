@@ -1,5 +1,6 @@
 package com.wazing.wanandroid.model.api
 
+import com.wazing.common.data.DataResponse
 import com.wazing.wanandroid.model.Article
 import com.wazing.wanandroid.model.BannerEntity
 import com.wazing.wanandroid.model.Pagination

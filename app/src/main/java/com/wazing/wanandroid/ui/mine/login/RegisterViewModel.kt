@@ -1,9 +1,9 @@
 package com.wazing.wanandroid.ui.mine.login
 
 import androidx.lifecycle.MutableLiveData
-import com.wazing.wanandroid.base.BaseViewModel
+import com.wazing.common.base.BaseViewModel
 import com.wazing.wanandroid.model.User
-import com.wazing.wanandroid.model.api.ResultCallback
+import com.wazing.common.data.ResultCallback
 
 class RegisterViewModel(
     private val repository: RegisterRepository

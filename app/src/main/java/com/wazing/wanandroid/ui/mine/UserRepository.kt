@@ -1,7 +1,7 @@
 package com.wazing.wanandroid.ui.mine
 
+import com.wazing.common.data.checkResult
 import com.wazing.wanandroid.model.api.ApiService
-import com.wazing.wanandroid.model.api.checkResult
 import com.wazing.wanandroid.model.room.dao.UserDao
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

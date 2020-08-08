@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="common_recycler_load_more">加载中&#8230;</string>
+
+    <string name="status_error">出了点问题!</string>
+    <string name="status_empty">没有找到数据</string>
+    <string name="status_timeout">加载超时</string>
+    <string name="status_loading">正在加载&#8230;</string>
+    <string name="status_click_retry">点击重试</string>
+
+    <string name="agentweb_error_page_hint">页面出错了，点击重试</string>
+
+</resources>

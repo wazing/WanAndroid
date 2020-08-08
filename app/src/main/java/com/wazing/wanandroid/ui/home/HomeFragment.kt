@@ -9,9 +9,9 @@ import androidx.paging.ExperimentalPagingApi
 import androidx.paging.LoadState
 import com.google.android.material.appbar.AppBarLayout
 import com.wazing.wanandroid.R
-import com.wazing.wanandroid.base.BaseFragment
+import com.wazing.common.base.BaseFragment
 import com.wazing.wanandroid.model.BannerEntity
-import com.wazing.wanandroid.model.api.ResultCallback
+import com.wazing.common.data.ResultCallback
 import com.wazing.wanandroid.shared.adapter.ArticleAdapter
 import com.wazing.wanandroid.shared.adapter.LoadMoreAdapter
 import com.wazing.wanandroid.ui.main.MainActivity
